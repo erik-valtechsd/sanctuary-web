@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> | SANCTUARY INSTITUTE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/css/uikit.min.css" />
+
+    <link rel="stylesheet" href="https://institute-340521.uw.r.appspot.com/css/contact.css" />
+
+</head>
+
+<body><header>  
+    <nav class="navbar" role="navigation">  
+        
+        
+        <div class="navbar__center">  
+            <a class="collections-link" href="/"> SANCTUARY INSTITUTE </a>
+            <a class="about-link" href="/about/index.html"> CONTACT </a>
+        </div>  
+    </nav>  
+</header>  
+<div class="container">
+        <div class="contact-image"></div>
+        <div class="flex-section-form">
+            <form id="form-container" ref="form">
+                <label for="name">We would love to share our progress with you, join our mailing list for
+                    updates:</label>
+                <div class="input-label">
+                    <input class="uk-input contact-field" type="text" name="from_email" placeholder="Email">
+                </div>
+                <div class="button-container">
+                    <input class="uk-button send-btn" type="submit" value="Send"></input>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="contact-info">
+            <a class="mail-link" href="mailto:contact@sauvagecollection.art">Contact Us </a>
+            <div class="contact-item">contact@sauvagecollection.art</div>
+            <div class="contact-item">sauvagecollection.eth</div>
+            <div class="contact-icons">
+                <a href="https://twitter.com/" class="twitter-icon"></a>
+                <a href="https://foundation.app/@sauvage" class="fdn-icon"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_69OcfgT3jWt8f10Hm1NnK");
+        })();
+    </script>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('form-container').addEventListener('submit', function (event) {
+                event.preventDefault();
+                emailjs.sendForm('service_l172qez', 'template_36jvpiu', this)
+                    .then(function (response) {
+                        console.log('SUCCESS!', response.status, response.text);
+                    }, function (error) {
+                        console.log('FAILED...', error);
+                    });
+            })
+        }
+    </script>
+
+</body>
+
+</html>

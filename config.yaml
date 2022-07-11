@@ -1,0 +1,12 @@
+baseURL: 'https://institute-340521.uw.r.appspot.com/'
+languageCode: 'en-us'
+title: 'SANCTUARY INSTITUTE'
+theme: "institute-theme"
+uglyurls: false
+# params:
+#     work1: "/images/1.jpg"
+#     work2: "/images/2.jpg"
+#     work3: "/images/3.jpg"
+#     work4: "/images/4.jpg"
+#     work5: "/images/5.jpg"
+#     work6: "/images/6.jpg"

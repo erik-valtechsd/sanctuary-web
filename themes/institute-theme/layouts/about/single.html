@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    {{- block "title" . -}}
+    {{ .Title}}{{ if ne .Title .Site.Title }} | {{ .Site.Title }}{{ end }}
+    {{- end -}}
+  </title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/about.css" />
+
+</head>
+
+<body>
+  {{- partial "page-header.html" . -}}
+
+  <body>
+    <div class="about-image"></div>
+    <div class="gallery">
+      <div class="header-content">
+        <div class="collection-title">
+          Sanctuary Institute
+        </div>
+        <div class="header-text">Sanctuary Institute is a community of inquisitive beings devoted to the exploration of
+          the human experience
+          and human potential. Engaged in research, education and interweaving creative mediums with consciousness
+          studies.</div>
+      </div>
+
+
+      <div class="collection-info">
+        <p>Throughout time radical spaces such as this, have been at the center of societal development and crucial
+          for the creation of new paradigms. Places like Esalen, Black Mountain, Gurdjieff’s Institute have shaped the
+          edge of the sciences and arts. We aim to continue this legacy.</p>
+        <p>Our practices draw on ancient knowledge systems - wisdom. With a focus on social justice and conscious
+          cultivation of self. We utilise beauty and the arts as a means towards self realisation and liberation.
+          Driven by our innate admiration and care for nature, we aim to create and develop an awareness for our
+          fundamental interconnectedness and a collective consciousness that is grounded in experience – all the while
+          creating a nourishing environment that supports another's growth, ideas and visions.</p>
+
+        <p>Sanctuary institute is located in Yucatan, Mexico on Mayan land. It’s nature is rich and fertile, with a
+          vast array of flora and fauna. A place for contemplation and adoration of nature itself. Immersed in the
+          abundant Mayan jungle rests a beautiful Cenote - a deep water cave where several endangered species can be
+          found. Located only an hour away from Caribbean beach paradises such as Tulum, and only 40 minutes away from
+          Chichen-Itzá, one of the most important Mayan archaeological sites. </p>
+        <div class="contact-info">
+          <a class="mail-link" href="mailto:contact@sauvagecollection.art">Contact Us </a>
+          <div class="contact-item">contact@sauvagecollection.art</div>
+          <div class="contact-item">sauvagecollection.eth</div>
+          <div class="contact-icons">
+            <a href="https://twitter.com/" class="twitter-icon"></a>
+            <a href="https://foundation.app/@sauvage" class="fdn-icon"></a>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    </div>
+
+  </body>
+
+
+</html>
