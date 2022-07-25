@@ -1,5 +1,5 @@
 body {
-  background-color: #e6e4df;
+  background-color: #fff;
   color: #000;
   background-size: cover;
   font-family: "Nunito Sans", sans-serif;
@@ -405,6 +405,11 @@ p {
     display: flex;
     justify-content: left;
   }
+  .contact-info{
+    padding: 25px;
+
+  }
+
   .about-image {
     height: 500px;
   }
