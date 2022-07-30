@@ -135,7 +135,7 @@ a.fdn-icon {
 }
 .collections-link {
   text-decoration: none;
-  color: #e6e4df;
+  color: #fff;
   font-weight: 300;
   font-size: 18px;
   opacity: 1;
@@ -149,7 +149,7 @@ a.fdn-icon {
 
 }
 .collections-link:hover {
-  /* color:  /* color: firebrick; */
+  color:  #e6e4df;
 }
 .about-link {
   /* font-family: "Shippori Mincho B1", serif; */
@@ -160,7 +160,7 @@ a.fdn-icon {
   font-size: 18px;
 }
 .about-link:hover {
-  /* color:  /* color: firebrick; */
+   color: #e6e4df;
 }
 
 .header-link:hover {

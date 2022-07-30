@@ -19,9 +19,8 @@ body {
 }
 
 a.mail-link {
-  width: 20%;
+  width: 50%;
   margin: 10px 0;
-  font-family: "Nunito Sans", sans-serif;
   color: #000;
   text-decoration: none;
   text-align: center;
@@ -80,6 +79,8 @@ label {
 }
 .contact-item {
   /* text-align: center; */
+  display:flex;
+  flex-direction: row;
   padding-top: 10px;
 }
 a.twitter-icon {
@@ -91,6 +92,31 @@ a.twitter-icon {
   margin-left: 5px;
   margin-right: 5px;
 }
+
+a.insta-icon {
+  border-radius: 50%;
+  background: url(/images/insta.jpeg);
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+  display: block;
+  margin:center;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+a.mail-icon {
+  border-radius: 50%;
+  background: url(/images/mail.png);
+  width: 25px;
+  height: 25px;
+  background-size:cover;
+  display: block;
+  margin:center;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+
 
 a.fdn-icon {
   width: 50px;
@@ -138,7 +164,7 @@ a.fdn-icon {
   font-weight: 300;
 }
 .collections-link:hover {
-  color: black;
+  color: darkgray;
   text-decoration: none;
 }
 .about-link {
@@ -147,7 +173,7 @@ a.fdn-icon {
   font-weight: 300;
 }
 .about-link:hover {
-  color: black;
+  color: darkgray;
   text-decoration: none;
 }
 .container {
@@ -398,6 +424,7 @@ p {
     height: 100px;
     background-size: cover;
   }
+  
 
   a.fdn-icon {
     width: 100px;

@@ -52,7 +52,8 @@ a.mail-link {
 }
 
 .contact-info {
-  margin-top: 50px;
+  margin-top: 50px; 
+  text-align: center;
   padding-bottom: 0;
   margin-bottom: 0;
 }
@@ -63,17 +64,47 @@ a.mail-link {
 }
 .contact-item {
   /* text-align: center; */
+  display:flex;
+  flex-direction: row;
   padding-top: 10px;
 }
 a.twitter-icon {
+  border-radius: 50%;
+  background-color:gray !important;
   background: url(/images/twitter-icon.png);
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
   background-size: cover;
   display: block;
+  margin:center;
   margin-left: 5px;
-  margin-right: 5px;
+  margin-right: 10px;
 }
+
+a.insta-icon {
+  border-radius: 50%;
+  background: url(/images/insta.jpeg);
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+  display: block;
+  margin:center;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+a.mail-icon {
+  border-radius: 50%;
+  background: url(/images/mail.png);
+  width: 25px;
+  height: 25px;
+  background-size:cover;
+  display: block;
+  margin:center;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
 
 a.fdn-icon {
   width: 50px;
@@ -134,7 +165,7 @@ a.fdn-icon {
   font-weight: 300;
 }
 .collections-link:hover {
-  /* color: firebrick; */
+  color: darkgray;
 }
 .about-link {
   text-decoration: none;
@@ -142,7 +173,7 @@ a.fdn-icon {
   font-weight: 300;
 }
 .about-link:hover {
-  color: black;
+  color: darkgray;
 }
 .gallery {
   display: flex;
